@@ -56,7 +56,6 @@ a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: aquamarine;
 }
 
 .img__renan {
@@ -68,5 +67,10 @@ a:hover {
 .box__description {
     width:900px;
     height: 250px;
-    background-color: #2b2b2b;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
