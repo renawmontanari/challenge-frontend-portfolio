@@ -74,3 +74,20 @@ a:hover {
     flex-direction: row;
     gap: 10px;
 }
+
+/* Rodapé */
+.footer {
+    display: flex;
+    height: 50px;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: var(--color-textPrimary);
+    background-color: var(--color-primary);
+}
+
+.footer__rodape {
+    display: flex;
+    gap: 10px;
+}
