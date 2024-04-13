@@ -1,10 +1,10 @@
 
 :root {
-    --color-primary: #dad9d9ec;
-    --color-secundary: #9db8c58c;
+    --color-primary:#FFFFFF;
+    --color-secundary: #EAF2FD;
     --color-textPrimary: #272727cc;
     --color-textPrimaryHover: #000000;
-    --color-white: #FFFFFF;
+    --color-white: #ffffff;
 }
 
 header {
@@ -146,11 +146,16 @@ a:hover {
     background-color: var(--color-primary);
 }
 
+.hobbies__title, .skills__title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
 .skills__line, .hobbies__line {
-    width: 90%;
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
     padding-bottom: 25px;
     gap: 10px;
@@ -162,6 +167,7 @@ a:hover {
     display: flex;
     padding: 16px;
     padding-top: 110px;
+    margin-bottom: 30px;
     background-color: var(--color-white);
 }
 
@@ -177,40 +183,98 @@ a:hover {
     background-color: var(--color-secundary);
 }
 
+.academic__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 55px;
+    margin-top: 30px;
+}
+
 .academic__courses {
     display: flex;
+    width: 90%;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 15px;
 }
 
 .academic__courses__box {
     width: 368px;
     height: 347px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
     background-color: var(--color-white);
 }
 
 .academic__courses__item__img img {
     width: 230px;
     height: 230px;
+    padding-bottom: 10px;
+}
+
+.academic__courses__item__title {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.academic__courses__item__subtitle {
+    font-size: 16px;
+    font-weight: 500;
 }
 
 /* Experiência Profissional/Projetos */
 .experience {
     width: 100%;
     height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--color-primary);
+}
+
+.experience__section__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.experiencie__box {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+}
+
+.experience__img {
+    width: 772px;
+    height: 426px;
 }
 
 /* Contato */
 .formcontato {
     width: 100%;
-    height: 250px;
+    height: 450px;
     background-color: var(--color-secundary);
 }
 
+.formcontato__contacto {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
 /* Rodapé */
-.footer {
-    margin-top: 120px;
+.footer {   
+    width: 100%;
+    height: 150px;
+    background-color: var(--color-textPrimary); 
+    position: fixed;
 }
