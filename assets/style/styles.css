@@ -5,6 +5,7 @@
     --color-textPrimary: #272727cc;
     --color-textPrimaryHover: #000000;
     --color-white: #ffffff;
+    --color-btnPrimary: #2A7AE4;
 }
 
 header {
@@ -135,7 +136,8 @@ a:hover {
 }
 
 /* Skills/Habilidades e Hobbies */
-.skills, .hobbies {
+.skills, 
+.hobbies {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -146,12 +148,14 @@ a:hover {
     background-color: var(--color-primary);
 }
 
-.hobbies__title, .skills__title {
+.hobbies__title, 
+.skills__title {
     font-size: 32px;
     font-weight: 700;
 }
 
-.skills__line, .hobbies__line {
+.skills__line, 
+.hobbies__line {
     width: 85%;
     display: flex;
     flex-wrap: wrap;
@@ -161,7 +165,8 @@ a:hover {
     gap: 10px;
 }
 
-.skills__box, .hobbies__box {
+.skills__box, 
+.hobbies__box {
     width: 176px;
     height: 174px;
     display: flex;
@@ -231,7 +236,6 @@ a:hover {
 /* Experiência Profissional/Projetos */
 .experience {
     width: 100%;
-    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,12 +248,22 @@ a:hover {
     margin-top: 50px;
 }
 
+.experience__title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.experience__text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
 .experiencie__box {
     display: flex;
+    flex-wrap: wrap;
     width: 90%;
     flex-direction: row;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding: 40px;
     justify-content: space-around;
 }
 
@@ -258,23 +272,109 @@ a:hover {
     height: 426px;
 }
 
+.experience__info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.experience__description {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.experiencia__botao--demo,
+.experiencia__botao--repo {
+    width: 105px;
+    height: 51px;
+    border: none;
+    color: var(--color-white);
+    background-color: var(--color-btnPrimary);
+}
+
+.experiencia__botao--repo {
+    color: var(--color-btnPrimary);
+    border: 1px solid var(--color-btnPrimary);
+    background-color: var(--color-white);
+}
+
 /* Contato */
 .formcontato {
     width: 100%;
-    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color-secundary);
+}
+
+.formcontato__title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.formcontato__subtext {
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .formcontato__contacto {
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    gap: 10px;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.formcontato__text, 
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formcontato__input {
+    width: 656px;
+    height: 56px;
+}
+
+input[type='text'], 
+input[type='email'], 
+textarea {
+    padding-left: 12px;
+    outline: 0;
+    border: none;
+}
+
+input[type='text']:focus, 
+input[type='email']:focus, 
+textarea {
+    border-color: var(--color-white);
+    outline: 1px solid var(--color-white);
+    border-bottom: 3px solid var(--color-btnPrimary);
+}
+
+.formcontato__textarea {
+    width: 656px;
+    height: 133px;
+}
+
+.formcontato__botao {
+    width: 165px;
+    height: 51px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-white);
+    background-color: var(--color-btnPrimary);
 }
 
 /* Rodapé */
 .footer {   
     width: 100%;
     height: 150px;
+    display: flex;
     background-color: var(--color-textPrimary); 
-    position: fixed;
 }
