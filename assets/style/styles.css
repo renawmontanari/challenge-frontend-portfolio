@@ -719,6 +719,7 @@ textarea {
         padding: 12px, 16px, 12px, 16px;
     }
 
+    /*Footer*/
     .footer {
         height: 102px;
     }
@@ -733,8 +734,25 @@ textarea {
 @media (max-width: 425px) {
     
     /*Menu*/
-    
+    .menu {
+        padding: 0px 5px 0px 8px;
+        justify-content: space-between;
+        width: 60%;
+    }  
+
     /*Titulo*/
+    .title {
+        height: 294px;
+    }
+
+    .title__profile {
+        width: 98px;
+        height: 98px;
+    }
+
+    .title__div {
+        flex-direction: column;
+    }
     
     /*Sessão sobre*/
     
