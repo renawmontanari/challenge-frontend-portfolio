@@ -17,7 +17,6 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: 60px;
-    align-items: center;
 }
 
 a:hover {
@@ -70,7 +69,7 @@ a:hover {
 }
 
 .title__div {
-    width: 80%;
+    width: 1136px;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -118,7 +117,7 @@ a:hover {
 }
 
 .about__container {
-    width: 80%;
+    width: 1136px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -153,11 +152,12 @@ a:hover {
 .skills__title {
     font-size: 32px;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .skills__line, 
 .hobbies__line {
-    width: 85%;
+    width: 1136px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -192,13 +192,13 @@ a:hover {
 .academic__title {
     font-size: 32px;
     font-weight: 700;
-    margin-bottom: 55px;
-    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-top: 10px;
 }
 
 .academic__courses {
     display: flex;
-    width: 90%;
+    width: 1136px;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
@@ -246,7 +246,8 @@ a:hover {
 .experience__section__title {
     font-size: 32px;
     font-weight: 700;
-    margin-top: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .experience__title {
@@ -262,10 +263,11 @@ a:hover {
 .experiencie__box {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 1136px;
     flex-direction: row;
-    padding: 40px;
-    justify-content: space-around;
+    padding: 0px;
+    margin-bottom: 20px;
+    justify-content: space-between;
 }
 
 .experience__img {
@@ -324,20 +326,22 @@ a:hover {
 }
 
 .formcontato__contacto {
-    width: 80%;
+    width: 1136px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     gap: 10px;
     justify-content: space-around;
-    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px;
 }
 
 .formcontato__text, 
 .formcontato__form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
 }
 
 .formcontato__input, textarea {
@@ -630,11 +634,15 @@ textarea {
     .academic__courses {
         width: 100%;
         flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 20px;
     }
 
     .academic__title {
         font-size:22px;
         font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 0;
     }
 
     .academic__courses__box {
@@ -661,7 +669,7 @@ textarea {
     
     /*Expeirência profissional*/
     .experience__img {
-        width: 704px;
+        width: 728px;
         height: 320px;
     }
 
@@ -685,6 +693,10 @@ textarea {
         font-weight: 500;
     }
 
+    .experiencie__box {
+        padding: 20px;
+    }
+
     /* Contato */
     .formcontato__contacto {
         width: 100%;
@@ -694,6 +706,10 @@ textarea {
 
     .formcontato__img {
         display: none;
+    }
+
+    .formcontato__text {
+        padding: 20px;
     }
 
     .formcontato__input, 
@@ -874,6 +890,22 @@ textarea {
      .formcontato__contacto {
         padding: 10px;
         margin-top: 15px;
+     }
+
+     .formcontato {
+        width: 425px;
+     }
+
+     .formcontato__form {
+        width: 425px;
+     }
+
+     .formcontato__text {
+        padding: 0;
+     }
+
+     .formcontato__input, .formcontato__textarea {
+        width: 406px;
      }
     
     /*Footer*/
