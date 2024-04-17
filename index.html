@@ -12,6 +12,9 @@
     <!-- Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -224,14 +227,14 @@
                         <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
                         <form class="formcontato__form">
                             <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                            <p class="input-warn" id="name-warn">Digite seu nome completo</p>
+                            <p class="input-warn" id="nome-warn">Digite seu nome completo</p>
                             <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                            <p class="input-warn" id="name-warn">Digite seu e-mail completo</p>
+                            <p class="input-warn" id="email-warn">Digite seu e-mail completo</p>
                             <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
-                            <p class="input-warn" id="name-warn">Digite um assunto</p>
-                            <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
-                            <p class="input-warn" id="name-warn">Digite sua mensagem</p>
-                            <button class="formcontato__botao" onclick="validateForm()">Enviar mensagem</button>
+                            <p class="input-warn" id="assunto-warn">Digite um assunto</p>
+                            <textarea class="formcontato__textarea" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
+                            <p class="input-warn" id="mensagem-warn">Digite sua mensagem</p>
+                            <button class="formcontato__botao" type="button" onclick="validateForm()">Enviar mensagem</button>
                         </form>
                     </div>
                 </div>
@@ -248,7 +251,8 @@
   
 
     <!-- JavaScript -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./assets/js/validate.js"></script>
-
+    
 </body>
 </html>

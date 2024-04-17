@@ -7,6 +7,7 @@
     --color-white: #ffffff;
     --color-btnPrimary: #2A7AE4;
     --color-alert: #fd3434;
+    --color-valid: #10bd00;
 }
 
 header {
@@ -389,6 +390,8 @@ textarea {
     color: var(--color-alert);
     display: none;
     font-size: 14px;
+    margin-top: -20px;
+    font-weight: 500;
 }
 
 .formcontato__input:invalid, .formcontato__textarea:invalid {
