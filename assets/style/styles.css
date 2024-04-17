@@ -406,7 +406,7 @@ textarea {
     font-weight: 500;
 }
 
-/* Laptop G */
+/* Laptop */
 @media (max-width: 1024px) {
 
     /* Menu */
@@ -420,6 +420,10 @@ textarea {
     }   
     
     /*title*/
+    .title {
+        width: 100%;
+    }
+
     .title__div {
         width: 90%;
     }
@@ -442,10 +446,20 @@ textarea {
     .title__container {
         gap: 10px;
     }
+
+    /* Sobre mim */
+    .about__container {
+        width: 90%;
+    }
     
-    /*Skills*/
-    
-    /*Hobbies*/
+    /*Skills*/ /*Hobbies*/
+    .skills__line, .hobbies__line {
+        width: 90%;
+    }
+
+    .skills__box, .hobbies__box {
+        width: 145px;
+    }
     
     /*Experiências acadêmicas*/
     .experiencie__box {
@@ -456,6 +470,7 @@ textarea {
     .academic__courses {
         width: 90%;
         flex-wrap: nowrap;
+        justify-content: space-between;
     }
 
     .academic__courses__box {
@@ -470,6 +485,10 @@ textarea {
     }
     
     /*Expeirência profissional*/
+    .experiencie__box {
+        width: 90%;
+    }
+
     .experience__img {
         width: 704px;
         height: 320px;
@@ -497,7 +516,7 @@ textarea {
 
     /* Contato */
     .formcontato__contacto {
-        width: 100%;
+        width: 90%;
         display: flow;
         justify-content: center;
     }
@@ -886,27 +905,27 @@ textarea {
         height: 40px;
     }
     
-     /*Contato*/
-     .formcontato__contacto {
+    /*Contato*/
+    .formcontato__contacto {
         padding: 10px;
         margin-top: 15px;
-     }
+    }
 
-     .formcontato {
+    .formcontato {
         width: 425px;
-     }
+    }
 
-     .formcontato__form {
+    .formcontato__form {
         width: 425px;
-     }
+    }
 
-     .formcontato__text {
+    .formcontato__text {
         padding: 0;
-     }
+    }
 
-     .formcontato__input, .formcontato__textarea {
+    .formcontato__input, .formcontato__textarea {
         width: 406px;
-     }
+    }
     
     /*Footer*/
 }
