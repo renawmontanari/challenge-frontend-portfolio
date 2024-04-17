@@ -224,10 +224,14 @@
                         <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
                         <form class="formcontato__form">
                             <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
+                            <p class="input-warn" id="name-warn">Digite seu nome completo</p>
                             <input class="formcontato__input" type="email" id="email" placeholder="Email">
+                            <p class="input-warn" id="name-warn">Digite seu e-mail completo</p>
                             <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
+                            <p class="input-warn" id="name-warn">Digite um assunto</p>
                             <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
-                            <button class="formcontato__botao">Enviar mensagem</button>
+                            <p class="input-warn" id="name-warn">Digite sua mensagem</p>
+                            <button class="formcontato__botao" onclick="validateForm()">Enviar mensagem</button>
                         </form>
                     </div>
                 </div>

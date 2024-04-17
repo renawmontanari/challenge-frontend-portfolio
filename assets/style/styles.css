@@ -6,6 +6,7 @@
     --color-textPrimaryHover: #000000;
     --color-white: #ffffff;
     --color-btnPrimary: #2A7AE4;
+    --color-alert: #fd3434;
 }
 
 header {
@@ -384,6 +385,16 @@ textarea {
     background-color: var(--color-btnPrimary);
 }
 
+.input-warn {
+    color: var(--color-alert);
+    display: none;
+    font-size: 14px;
+}
+
+.formcontato__input:invalid, .formcontato__textarea:invalid {
+    border-color: var(--color-alert);
+}
+
 /* Rodapé */
 .footer {   
     width: 100%;
@@ -552,7 +563,6 @@ textarea {
         font-weight: 600;
         padding: 12px, 16px, 12px, 16px;
     }
-
 }
 
 /*Tablet*/
